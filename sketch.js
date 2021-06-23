@@ -12,7 +12,7 @@ This example uses p5 preload function to create the classifier
 // Classifier Variable
 let classifier;
 // Model URL
-let imageModelURL = 'https://jw558870.github.io/imageai2/';
+let imageModelURL = 'https://teachablemachine.withgoogle.com/models/bXy2kDNi/';
 
 // Video
 let video;
@@ -28,6 +28,7 @@ function preload() {
 function setup() {
   createCanvas(320, 320);
   // Create the video
+  
   var constraints = {
 
     audio: false,
@@ -50,7 +51,7 @@ function setup() {
 
   };
   
-  video = createCapture(constraints);
+  video = createCapture(constraintsO);
   video.size(320, 320);
   video.hide();
 
